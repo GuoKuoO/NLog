@@ -1,0 +1,4 @@
+Log file created at: 2018/12/06 14:09:27
+Running on machine: guoyaosong-PC
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I1206 14:09:27.885347  3321 bsLog.cpp:69] hello world.

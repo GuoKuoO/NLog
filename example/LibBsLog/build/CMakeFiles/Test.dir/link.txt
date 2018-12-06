@@ -1,0 +1,1 @@
+/usr/bin/cc -g  -rdynamic CMakeFiles/Test.dir/test/test.c.o  -o ../out/Test  -L/home/guoyaosong/Workspace/example/LibBsLog/lib  -L/home/guoyaosong/Workspace/example/LibBsLog/../OpenLibs/Libgrpc/lib -Wl,-rpath,/home/guoyaosong/Workspace/example/LibBsLog/lib:/home/guoyaosong/Workspace/example/LibBsLog/../OpenLibs/Libgrpc/lib -pthread -lstdc++ -lBsLog 

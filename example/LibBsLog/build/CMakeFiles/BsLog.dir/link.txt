@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -std=c++11 -fpermissive  -g  -shared -Wl,-soname,libBsLog.so -o ../lib/libBsLog.so CMakeFiles/BsLog.dir/src/bsLog.cpp.o  -L/home/guoyaosong/Workspace/example/LibBsLog/lib -Wl,-rpath,/home/guoyaosong/Workspace/example/LibBsLog/lib -pthread -Wl,-Bstatic -lglog -lgflags -Wl,-Bdynamic 

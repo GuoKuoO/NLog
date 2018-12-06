@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../inc/bsLog.h
+common.h
+../inc/common.h
+
+../inc/common.h
+stdint.h
+-
+stdio.h
+-
+stdlib.h
+-
+
+/home/guoyaosong/Workspace/example/LibBsLog/test/test.c
+string.h
+-
+stdio.h
+-
+bsLog.h
+/home/guoyaosong/Workspace/example/LibBsLog/test/bsLog.h
+

@@ -1,0 +1,23 @@
+LibBsLog库说明：
+
+该库是基于glog进行二次封装的，结合grpc和db，它总共提供三种功能：
+
+1. 基本的日志读写
+
+2. 对VMFS数据库的读写
+
+3. grpc方式日式发送
+
+考虑到LibBsLog有一种使用场景是作为纯粹的日志库，因此将该工程编译成两份库，LibBsLog.so和LibBsLog_with_grpc.so
+
+LibBsLog.so：单纯的日志打印，含终端输出和文件输出
+
+LibBsLog_with_grpc.so：除了标准日志输出之外，支持对Bstar VMFS系统进行读写，及将日志以grpc方式发送出。
+
+编译方法：
+
+1.LibBsLog.so 在ProjectMetadata.cmake中，找到BsLog_with_grpc对应的BuildLibrary，注释掉改行，且将bsLog.h中的#define WITH_GRPC注释掉
+
+2.LibBsLog_with_grpc.so 在ProjectMetadata.cmake中，找到BsLog对应的BuildLibrary，注释掉改行，且将bsLog.h中的#define WITH_GRPC 打开
+
+编译好的库放到Lib目录下。
